@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#05070d">
+  <meta name="description" content="Savindu Hinsara — futuristic personal portfolio. Student, developer, creator, language learner and builder.">
+  <title>SAVINDU // DIGITAL FRONTIER</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="matrix"></canvas>
+  <div class="noise"></div>
+  <div class="scanlines"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Savindu home">
+      <span class="brand-mark">SH</span>
+      <span>SAVINDU<span class="accent">.SYS</span></span>
+    </a>
+    <nav id="mainNav">
+      <a href="#about">ABOUT</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#lab">LAB</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    <button class="icon-btn" id="cmdBtn" aria-label="Open command palette">⌘K</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-grid"></div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> SYSTEM ONLINE // SRI LANKA</div>
+        <h1>BUILDING THE<br><span class="gradient-text">NEXT VERSION</span><br>OF MYSELF.</h1>
+        <p class="hero-lead">Student. Developer. Creator. Language learner. Curious human trying to understand everything from code to cosmos.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">EXPLORE PROJECTS <span>↗</span></a>
+          <a class="btn ghost" href="#contact">ESTABLISH CONTACT</a>
+        </div>
+        <div class="terminal-line"><span class="prompt">savindu@future:~$</span> <span id="typed"></span><span class="cursor">█</span></div>
+      </div>
+
+      <div class="hero-orbit" aria-hidden="true">
+        <div class="orbit o1"></div>
+        <div class="orbit o2"></div>
+        <div class="orbit o3"></div>
+        <div class="core"><span>SH</span></div>
+      </div>
+
+      <div class="scroll-cue">SCROLL TO INITIALIZE <span>↓</span></div>
+    </section>
+
+    <section id="about" class="section section-pad">
+      <div class="section-head">
+        <span class="section-no">01</span>
+        <div>
+          <p class="kicker">IDENTITY FILE</p>
+          <h2>WHO IS <span class="accent">SAVINDU?</span></h2>
+        </div>
+      </div>
+      <div class="about-layout">
+        <div class="about-card glass">
+          <div class="card-top"><span>PROFILE://SAVINDU_HINSARA</span><span>● ACTIVE</span></div>
+          <div class="profile-symbol">SH</div>
+          <h3>Savindu Hinsara</h3>
+          <p class="muted">Student / Developer / Creator / Builder</p>
+          <p>I like learning by going down rabbit holes. One minute it is physics or astronomy; the next it is game development, languages, geography, history, or a completely unreasonable side project.</p>
+          <div class="chips">
+            <span>CURIOUS</span><span>PERSEVERANT</span><span>SELF-TAUGHT</span><span>EXPERIMENTAL</span>
+          </div>
+        </div>
+        <div class="about-copy">
+          <p class="big-quote">“Curiosity is a feature, not a bug.”</p>
+          <p>My interests sit at the intersection of <b>technology, science, creativity and systems</b>. I enjoy making things—not just consuming them.</p>
+          <p>My current toolkit includes web technologies and Python, while I am expanding into Godot and GDScript for game development. Outside code, I make YouTube content, explore languages, write, read novels, and obsess over questions that probably did not need to be asked at 2 a.m.</p>
+          <div class="facts">
+            <div><strong>01</strong><span>Web development</span></div>
+            <div><strong>02</strong><span>Game development</span></div>
+            <div><strong>03</strong><span>Science & astronomy</span></div>
+            <div><strong>04</strong><span>Languages & culture</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-pad">
+      <div class="section-head">
+        <span class="section-no">02</span>
+        <div><p class="kicker">CAPABILITY MATRIX</p><h2>TOOLS & <span class="accent">CURIOSITIES</span></h2></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-panel glass">
+          <div class="panel-title"><span class="dot"></span> DEVELOPMENT</div>
+          <div class="skill-row"><span>HTML / CSS</span><i><b style="width:92%"></b></i><em>CORE</em></div>
+          <div class="skill-row"><span>JavaScript</span><i><b style="width:82%"></b></i><em>CORE</em></div>
+          <div class="skill-row"><span>Python</span><i><b style="width:78%"></b></i><em>CORE</em></div>
+          <div class="skill-row"><span>PHP / MySQL</span><i><b style="width:70%"></b></i><em>BUILD</em></div>
+          <div class="skill-row"><span>Godot / GDScript</span><i><b style="width:42%"></b></i><em>LEARNING</em></div>
+        </div>
+        <div class="skill-panel glass">
+          <div class="panel-title"><span class="dot"></span> DOMAINS</div>
+          <div class="tag-cloud">
+            <span>PHYSICS</span><span>ASTRONOMY</span><span>GAME DEV</span><span>GEOGRAPHY</span>
+            <span>HISTORY</span><span>LANGUAGES</span><span>YOUTUBE</span><span>CREATIVE TECH</span>
+            <span>WEB</span><span>PROBLEM SOLVING</span><span>WRITING</span><span>EXPERIMENTATION</span>
+          </div>
+        </div>
+        <div class="skill-panel glass language-panel">
+          <div class="panel-title"><span class="dot"></span> LANGUAGE STACK</div>
+          <p class="muted">Native / strong</p>
+          <div class="lang"><span>Sinhala</span><b>NATIVE</b></div>
+          <div class="lang"><span>English</span><b>ACTIVE</b></div>
+          <p class="muted">Currently exploring</p>
+          <div class="lang-list">Spanish · French · German · Portuguese · Italian · Latin · Russian · Hindi · Greek</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-pad">
+      <div class="section-head">
+        <span class="section-no">03</span>
+        <div><p class="kicker">ACTIVE PROJECTS</p><h2>THINGS I'M <span class="accent">BUILDING</span></h2></div>
+      </div>
+      <div class="filter-bar">
+        <button class="filter active" data-filter="all">ALL</button>
+        <button class="filter" data-filter="code">CODE</button>
+        <button class="filter" data-filter="game">GAME DEV</button>
+        <button class="filter" data-filter="creative">CREATIVE</button>
+        <button class="filter" data-filter="world">WORLD-BUILDING</button>
+      </div>
+      <div class="project-grid" id="projectGrid">
+        <article class="project-card glass" data-type="world">
+          <div class="project-index">PROJECT 001</div>
+          <div class="project-icon">◈</div>
+          <h3>ALLONSLAND</h3>
+          <p>A personal micronation/world-building project with its own identity, systems, constitutional ideas, calendar concepts and evolving lore.</p>
+          <div class="project-meta"><span>WORLD-BUILDING</span><span>ONGOING</span></div>
+          <a href="#lab" class="project-link">OPEN DOSSIER →</a>
+        </article>
+        <article class="project-card glass" data-type="game">
+          <div class="project-index">PROJECT 002</div>
+          <div class="project-icon">⚓</div>
+          <h3>PROJECT AUGUSTA: SEA</h3>
+          <p>A top-down 2D pirate game concept built around ship combat, exploration and a hostile British East India Company.</p>
+          <div class="project-meta"><span>GODOT</span><span>IN DEVELOPMENT</span></div>
+          <a href="#lab" class="project-link">OPEN DOSSIER →</a>
+        </article>
+        <article class="project-card glass" data-type="code">
+          <div class="project-index">PROJECT 003</div>
+          <div class="project-icon">{ }</div>
+          <h3>WEB LAB</h3>
+          <p>A growing collection of experiments with HTML, CSS, JavaScript, PHP, MySQL and interactive interfaces.</p>
+          <div class="project-meta"><span>WEB</span><span>EXPERIMENTAL</span></div>
+          <a href="#lab" class="project-link">OPEN DOSSIER →</a>
+        </article>
+        <article class="project-card glass" data-type="creative">
+          <div class="project-index">PROJECT 004</div>
+          <div class="project-icon">✦</div>
+          <h3>CREATOR MODE</h3>
+          <p>YouTube, writing, visual ideas and creative experiments—turning whatever is currently occupying the brain into something tangible.</p>
+          <div class="project-meta"><span>MEDIA</span><span>ONGOING</span></div>
+          <a href="#contact" class="project-link">COLLABORATE →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="lab" class="section section-pad">
+      <div class="section-head">
+        <span class="section-no">04</span>
+        <div><p class="kicker">EXPERIMENTAL ZONE</p><h2>THE <span class="accent">LAB</span></h2></div>
+      </div>
+      <div class="lab-layout">
+        <div class="terminal glass">
+          <div class="terminal-head"><span>savindu_terminal</span><span>● ● ●</span></div>
+          <div id="terminalOutput">
+            <p><span class="green">boot</span> :: SAVINDU.SYS v2.0</p>
+            <p><span class="green">boot</span> :: loading curiosity modules...</p>
+            <p><span class="green">ok</span> :: developer profile loaded</p>
+            <p><span class="green">ok</span> :: imagination engine online</p>
+            <p class="muted">Type <b>help</b> to see available commands.</p>
+          </div>
+          <div class="terminal-input"><span>guest@sh:~$</span><input id="terminalInput" autocomplete="off" spellcheck="false" aria-label="Terminal command"></div>
+        </div>
+        <div class="lab-cards">
+          <div class="mini-card glass">
+            <span class="mini-icon">01</span><h3>NOW LEARNING</h3><p>Godot scene management, GDScript and the fundamentals of turning game ideas into playable systems.</p>
+          </div>
+          <div class="mini-card glass">
+            <span class="mini-icon">02</span><h3>NOW EXPLORING</h3><p>Physics, astronomy, languages, geography and whatever interesting question appears next.</p>
+          </div>
+          <div class="mini-card glass">
+            <span class="mini-icon">03</span><h3>DESIGN PHILOSOPHY</h3><p>Learn → build → break → understand → rebuild. Repeat until the thing becomes interesting.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="timeline" class="section section-pad">
+      <div class="section-head">
+        <span class="section-no">05</span>
+        <div><p class="kicker">TRAJECTORY</p><h2>THE <span class="accent">ROAD AHEAD</span></h2></div>
+      </div>
+      <div class="timeline">
+        <div class="time-item"><span>01</span><div><small>FOUNDATION</small><h3>LEARN THE FUNDAMENTALS</h3><p>Keep sharpening mathematics, science, computing and communication while building things alongside formal study.</p></div></div>
+        <div class="time-item"><span>02</span><div><small>BUILD</small><h3>SHIP REAL PROJECTS</h3><p>Move from tutorials and experiments toward complete games, websites and creative projects people can actually use.</p></div></div>
+        <div class="time-item"><span>03</span><div><small>EXPAND</small><h3>CONNECT THE DISCIPLINES</h3><p>Blend software, science, storytelling, design and languages instead of treating them as separate worlds.</p></div></div>
+        <div class="time-item"><span>04</span><div><small>FUTURE</small><h3>KEEP GOING</h3><p>There is no final version. The whole point is the next one.</p></div></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-pad contact-section">
+      <div class="section-head">
+        <span class="section-no">06</span>
+        <div><p class="kicker">TRANSMISSION CHANNEL</p><h2>LET'S <span class="accent">CONNECT</span></h2></div>
+      </div>
+      <div class="contact-layout">
+        <div>
+          <p class="contact-big">Have an idea?<br><span>Let's build it.</span></p>
+          <p class="muted">This form works locally and can be connected to any backend or form service later. No fake contact details, no mystery inbox.</p>
+          <div class="social-row">
+            <a href="#contact" aria-label="Social link placeholder">YOUTUBE</a>
+            <a href="#contact" aria-label="Social link placeholder">GITHUB</a>
+            <a href="#contact" aria-label="Social link placeholder">INSTAGRAM</a>
+          </div>
+        </div>
+        <form class="contact-form glass" id="contactForm">
+          <label>IDENTIFIER<input name="name" required placeholder="Your name"></label>
+          <label>RETURN CHANNEL<input type="email" name="email" required placeholder="you@example.com"></label>
+          <label>MESSAGE<textarea name="message" required rows="5" placeholder="Transmit your idea..."></textarea></label>
+          <button class="btn primary" type="submit">TRANSMIT MESSAGE ↗</button>
+          <p id="formStatus" class="form-status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><span class="brand-mark small">SH</span> SAVINDU.SYS</div>
+    <div>REINCARNATIO ET RECONCILIO</div>
+    <div>© <span id="year"></span> // ALL SYSTEMS NOMINAL</div>
+  </footer>
+
+  <div class="command-palette" id="commandPalette" aria-hidden="true">
+    <div class="palette glass">
+      <div class="palette-head"><span>COMMAND CENTER</span><button id="closePalette">ESC</button></div>
+      <input id="paletteInput" placeholder="Search sections or type a command..." autocomplete="off">
+      <div id="paletteResults"></div>
+      <p class="muted palette-help">↑ ↓ navigate · Enter select · Esc close</p>
+    </div>
+  </div>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
